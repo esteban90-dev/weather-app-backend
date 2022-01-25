@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors, debug: true, logger: (-> { Rails.logger }) do
    allow do
-     origins "https://esteban90-dev.github.io/weather-app:80"
+     origins 'https://esteban90-dev.github.io:443'
 
      resource '*',
        headers: :any,
